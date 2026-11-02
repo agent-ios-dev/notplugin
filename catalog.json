@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-02",
+  "products": [
+    {
+      "id": "notnft",
+      "name": "NotNFT",
+      "version": "2.0.1",
+      "state": "stable",
+      "file": "downloads/NotNFT-2.0.1.js",
+      "bytes": 1820335,
+      "sha256": "aabb8c93875e9e4264e2465734ba9c216d67f3e708ee3930135072f9b0510bf9",
+      "status": "stable",
+      "description": "Локальные подарки, коллекционные NFT и баланс Stars/TON в Whitegram.",
+      "sdk": "6.0",
+      "format": ".js",
+      "icon": "assets/notnft.png",
+      "commands": [
+        ".notnft",
+        ".nft"
+      ],
+      "features": [
+        "Подарки в чате и профиле",
+        "Коллекционные подарки по ссылке",
+        "Локальный баланс Stars и TON",
+        "Сброс Stars через -1",
+        "Очистка локальных подарков из профилей"
+      ],
+      "requirements": [
+        "Whitegram с SDK 6.0",
+        "Доступ к интернету для веб-меню"
+      ],
+      "installation": [
+        "Скачайте JS-файл и откройте его в разделе плагинов Whitegram.",
+        "Разрешите запрошенные возможности и отправьте .notnft или .nft в любом чате."
+      ],
+      "notes": [
+        "Подарки и баланс локальные: настоящие покупки и передача NFT не выполняются.",
+        "Веб-меню и проверка подписки используют Cloudflare.",
+        "Для коллекционного подарка нужен его нативный кеш в Whitegram."
+      ],
+      "releases": [
+        {
+          "version": "2.0",
+          "state": "stable",
+          "file": "downloads/NotNFT-2.0.js",
+          "bytes": 1818631,
+          "sha256": "c49f07766fe9d3a3b77fe2d5e9d0bdfce6cd7772056edbc1263a2d187ea07577",
+          "note": "Предыдущий релиз. Для исправления сброса Stars используйте 2.0.1."
+        },
+        {
+          "version": "2.0 public beta",
+          "state": "beta",
+          "file": "downloads/NotNFT-2.0-public-beta.js",
+          "bytes": 2276911,
+          "sha256": "7d6d14d6c79bc9353185ae51b976b78bb957427bc46b501bcd0b6273b7268a6d"
+        },
+        {
+          "version": "2.0 beta",
+          "state": "beta",
+          "file": "downloads/NotNFT-2.0-beta.js",
+          "bytes": 2276862,
+          "sha256": "6a51684c4fdd29686fe65f6d2fb54caf1d2f7ba4d3c8562e56cf8b4b814a071b"
+        },
+        {
+          "version": "1.0",
+          "state": "stable",
+          "file": "downloads/NotNFT-1.0.js",
+          "bytes": 2284418,
+          "sha256": "ca068808379120642c29d64db4f619a22c7eaf5d5665e346a7cadf4b86b1f0bb",
+          "note": "Архивный вариант с локальным HTTP-меню. Не рекомендуется для новой установки."
+        }
+      ]
+    },
+    {
+      "id": "notrkn",
+      "name": "NotРКН",
+      "version": "0.1.1",
+      "state": "beta",
+      "file": "downloads/NotRKN-0.1.1.plugin",
+      "bytes": 178704,
+      "sha256": "25365793c4d2f617032cbce4d217452353b62cae9b45b7f45f6264f70052fb6f",
+      "status": "beta",
+      "description": "Локальный MTProto → WebSocket прокси Telegram для Whitegram.",
+      "sdk": "6.0",
+      "format": ".plugin",
+      "icon": null,
+      "commands": [
+        ".notrkn",
+        ".rkn"
+      ],
+      "features": [
+        "Локальный прокси на устройстве",
+        "Подключение к Telegram через WebSocket",
+        "Нативное меню Whitegram",
+        "Диагностика соединения"
+      ],
+      "requirements": [
+        "Whitegram 12.9 или новее с SDK 6.0",
+        "Встроенный Python 3.11 или новее"
+      ],
+      "installation": [
+        "Установите пакет .plugin целиком через «Поделиться → Whitegram» или раздел плагинов.",
+        "Включите Python в «Плагины → Языки», если Whitegram попросит.",
+        "Откройте меню командой .notrkn и нажмите «Добавить прокси в Whitegram», затем подтвердите подключение."
+      ],
+      "notes": [
+        "Экспериментальная бета. Сборка 0.1.1 не проверена на физическом iPhone.",
+        "Прокси работает на устройстве и соединяется с WebSocket-серверами Telegram.",
+        "Работа в фоне и доступность на заблокированной сети зависят от iOS и сети."
+      ],
+      "releases": [
+        {
+          "version": "0.1.0",
+          "state": "beta",
+          "file": "downloads/NotRKN-0.1.0.plugin",
+          "bytes": 176387,
+          "sha256": "8c9bb37c3baeecbc23d7c23c7156e0b166dd26a2610c729d2afa24c3f1642394",
+          "note": "Предыдущая бета. В 0.1.1 исправлены маршруты подключения и диагностика."
+        }
+      ]
+    }
+  ]
+}

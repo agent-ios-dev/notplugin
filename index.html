@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6f6">
+  <meta name="description" content="NotPlugin — каталог плагинов для Whitegram. Скачайте NotNFT и NotРКН, выберите версию и узнайте, как установить плагин.">
+  <meta property="og:title" content="NotPlugin — плагины для Whitegram">
+  <meta property="og:description" content="NotNFT, NotРКН и все опубликованные версии. Прямое скачивание и простая установка.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://notplugin.eu.cc/">
+  <link rel="canonical" href="https://notplugin.eu.cc/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>NotPlugin — плагины для Whitegram</title>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#plugins">К плагинам</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="NotPlugin, главная">NotPlugin</a>
+    <a class="channel-link" href="https://t.me/real_gifts_club" target="_blank" rel="noopener noreferrer">Канал ↗</a>
+  </header>
+  <main class="wrap">
+    <section class="catalog-section" id="plugins" aria-labelledby="catalog-title">
+      <h1 id="catalog-title">Плагины для Whitegram</h1>
+      <div class="plugin-grid">
+        <article class="plugin-card" data-product="notnft" data-status="stable">
+          <div class="card-heading"><img class="plugin-icon" src="assets/notnft.png" width="56" height="56" alt="Логотип NotNFT"><div><h2 class="product-name">NotNFT</h2><span class="version">v2.0.1</span></div></div>
+          <p class="card-description">Локальные подарки, NFT и баланс.</p>
+          <div class="card-footer"><a class="button primary download" href="downloads/NotNFT-2.0.1.js" download="NotNFT-2.0.1.js" aria-label="Скачать NotNFT 2.0.1">Скачать <span aria-hidden="true">↓</span></a><button type="button" class="details-button" data-details="notnft">Подробнее</button></div>
+        </article>
+        <article class="plugin-card" data-product="notrkn" data-status="beta">
+          <div class="card-heading"><span class="plugin-icon rkn-icon" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><path d="M22 24h36M22 56h36M24 24v32M56 24v32M24 24l32 32M56 24L24 56" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="18" height="18" rx="6" fill="currentColor"/><rect x="48" y="14" width="18" height="18" rx="6" fill="currentColor"/><rect x="14" y="48" width="18" height="18" rx="6" fill="currentColor"/><rect x="48" y="48" width="18" height="18" rx="6" fill="currentColor"/></svg></span><div><h2 class="product-name">NotРКН</h2><span class="version">v0.1.1</span><span class="beta-label">beta</span></div></div>
+          <p class="card-description">WebSocket-прокси для Telegram.</p>
+          <div class="card-footer"><a class="button primary download" href="downloads/NotRKN-0.1.1.plugin" download="NotRKN-0.1.1.plugin" aria-label="Скачать NotРКН 0.1.1">Скачать <span aria-hidden="true">↓</span></a><button type="button" class="details-button" data-details="notrkn">Подробнее</button></div>
+        </article>
+      </div>
+    </section>
+    <div class="extra-info">
+      <details id="install"><summary>Как установить</summary><div class="install-content"><p>Откройте скачанный файл через «Поделиться → Whitegram» или раздел «Настройки → Плагины».</p><p>Меню: <code>.notnft</code> или <code>.notrkn</code>. Для NotРКН нужен встроенный Python 3.11.</p></div></details>
+      <details id="versions"><summary>Старые версии</summary><div class="archive-content"><label class="archive-controls">Плагин <select id="archive-product"><option value="all">Все</option><option value="notnft">NotNFT</option><option value="notrkn">NotРКН</option></select></label><div class="release-list" id="release-list"><p class="loading-note">Загрузка…</p></div><p class="archive-note">В старых сборках могут быть уже исправленные ошибки.</p></div></details>
+    </div>
+  </main>
+
+  <dialog id="plugin-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><button class="close-dialog" type="button" aria-label="Закрыть подробности">×</button></div><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
