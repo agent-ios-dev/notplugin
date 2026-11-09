@@ -4,3 +4,18 @@
 @media(max-width:650px){.wrap{padding-left:20px;padding-right:20px}.header{height:82px}.brand{font-size:22px}.channel-link{font-size:12px}.catalog-section{padding-top:21px}h1{font-size:28px;letter-spacing:-1px;margin-bottom:24px}.plugin-grid{grid-template-columns:1fr;gap:13px}.plugin-card{padding:22px;border-radius:18px}.card-description{font-size:13px;margin:20px 0 21px}.card-footer{gap:23px}.extra-info{margin-top:25px;margin-bottom:45px}.release-row{grid-template-columns:1fr 1.1fr auto;gap:8px}.release-name{font-size:11px}.release-version{font-size:10px}.release-row a{font-size:10px}.release-row p{font-size:10px;margin-top:-3px}dialog{padding:20px 22px 24px}.dialog-title{font-size:25px}.dialog-download{gap:10px}.dialog-download .button{font-size:12px;gap:15px}.dialog-download>span{font-size:10px}}
 @media(max-width:360px){h1{font-size:25px}.plugin-card{padding:20px}.card-footer{gap:20px}.button{padding-left:16px;padding-right:16px;gap:27px}.card-description{font-size:12px}.release-row{gap:6px}.release-version{font-size:9px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.catalog-section h1 {
+  margin-bottom: 12px;
+}
+
+.channel-note {
+  margin: 0 0 24px;
+  color: #686868;
+  font-size: 13px;
+}
+
+.channel-note a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
